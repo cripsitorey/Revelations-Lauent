@@ -12,8 +12,13 @@
     text-align: center;
 }
 
-#eco {
+.rgx {
     display: none;
+}
+
+
+.login-mojang-input{
+    margin-bottom: 15px;
 }
 
 
