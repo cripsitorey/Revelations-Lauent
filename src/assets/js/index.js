@@ -69,7 +69,7 @@ class Splash {
 
 
     startLauncher() {
-        this.setStatus(`Actualización disponible`);
+        this.setStatus(`Iniciando Revelations`);
         ipcRenderer.send('main-window-open');
         ipcRenderer.send('update-window-close');
     }
