@@ -2,6 +2,7 @@
 @import "panels/login.css";
 @import "panels/home.css";
 @import "panels/settings.css";
+@import "panels/deli.css";
 
 * {
     outline: none;
@@ -11,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     user-select: none;
+    /* background: url("../images/background/light.jpg") center; */
     background: linear-gradient(#00000066, #00000066), url("../images/background/light.jpg") black no-repeat center center scroll;
 }
 
@@ -19,10 +21,17 @@ img {
     user-select: none;
 }
 
+.clutch {
+    margin-top: 8;
+    font: normal normal 0.75em/0.75em Poppins;
+    margin-left: 5;
+    color: #e4e6e6;
+}
+
 .dragbar {
     position: fixed;
     background: #00000080;
-    top: 0px;
+    /* top: 0px; */
     left: 0px;
     width: 100%;
     height: 26px;

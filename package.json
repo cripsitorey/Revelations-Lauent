@@ -1,11 +1,11 @@
 {
-    "name": "Selvania-Launcher",
-    "preductname": "Selvania Launcher",
-    "version": "1.0.2",
-    "description": "Launcher Mincraft custom (crack, premium)",
+    "name": "revelations_lauent",
+    "preductname": "Revelations Lauent",
+    "version": "2.0.1",
+    "description": "Launcher oficial para EternalCraft",
     "main": "src/app.js",
-    "author": "Luuxis",
-    "url": "http://launcher.selvania.fr",
+    "author": "SKrip",
+    "url": "https://cripsitorey.tk/webserver/",
     "engines": {
         "node": "16.x.x"
     },
@@ -31,6 +31,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/luuxis/Selvania-Launcher.git"
+        "url": "git+https://github.com/cripsitorey/Revelations-Lauent.git"
     }
 }

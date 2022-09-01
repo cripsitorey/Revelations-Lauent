@@ -1,7 +1,3 @@
-/**
- * @author Luuxis
- * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
- */
 
 'use strict';
 
@@ -15,6 +11,7 @@ import Login from './panels/login.js';
 import Home from './panels/home.js';
 import Settings from './panels/settings.js';
 import skin from './panels/panelSkin.js';
+import Deli from './panels/deli.js'
 
 class Launcher {
     async init() {
@@ -24,7 +21,7 @@ class Launcher {
         this.config = await config.GetConfig().then(res => res);
         this.news = await config.GetNews().then(res => res);
         this.database = await new database().init();
-        this.createPanels(Login, Home, skin, Settings);
+        this.createPanels(Login, Home, skin, Settings, Deli);
         this.getaccounts();
     }
 
@@ -34,7 +31,7 @@ class Launcher {
                 ipcRenderer.send("main-window-dev-tools");
             }
         })
-        new logger('Launcher', '#7289da')
+        new logger('Launcher', '#25E1EA')
     }
 
     initFrame() {
@@ -131,7 +128,7 @@ class Launcher {
                     if (!validate) {
                         this.database.delete(account.uuid, 'accounts');
                         if (account.uuid === selectaccount) this.database.update({ uuid: "1234" }, 'accounts-selected')
-                        console.error(`[Account] ${account.uuid}: Token is invalid.`);
+                        console.error(`[Account] ${account.uuid}: Token is invalid`);
                         continue;
                     }
 
@@ -179,7 +176,7 @@ class Launcher {
                 document.querySelector(".preload-content").style.display = "none";
                 return
             }
-            changePanel("home");
+            changePanel("deli");
         }
         document.querySelector(".preload-content").style.display = "none";
     }

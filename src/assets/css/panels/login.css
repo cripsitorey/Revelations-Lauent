@@ -12,6 +12,15 @@
     text-align: center;
 }
 
+#eco {
+    display: none;
+}
+
+
+.microsoft {
+    display: none;
+}
+
 .login-type {
     display: grid;
     padding: 0 7%;

@@ -1,7 +1,3 @@
-/**
- * @author Luuxis
- * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
- */
 
 'use strict';
 
@@ -83,7 +79,7 @@ class Login {
 
                 addAccount(account)
                 accountSelect(account.uuid)
-                changePanel("home");
+                changePanel("deli");
 
                 microsoftBtn.disabled = false;
                 mojangBtn.disabled = false;
@@ -122,11 +118,11 @@ class Login {
             loginBtn.disabled = true;
             mailInput.disabled = true;
             passwordInput.disabled = true;
-            infoLogin.innerHTML = "Connexion en cours...";
+            infoLogin.innerHTML = "Conexión actual";
 
 
             if (mailInput.value == "") {
-                infoLogin.innerHTML = "Entrez votre adresse email / Nom d'utilisateur"
+                infoLogin.innerHTML = "Ingresa tu mounstroso nickname"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
@@ -135,7 +131,7 @@ class Login {
             }
 
             if (passwordInput.value == "") {
-                infoLogin.innerHTML = "Entrez votre mot de passe"
+                infoLogin.innerHTML = "--"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
@@ -161,7 +157,7 @@ class Login {
 
                 addAccount(account)
                 accountSelect(account.uuid)
-                changePanel("home");
+                changePanel("deli");
 
                 cancelMojangBtn.disabled = false;
                 cancelMojangBtn.click();
@@ -176,7 +172,7 @@ class Login {
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
-                infoLogin.innerHTML = 'Adresse E-mail ou mot de passe invalide'
+                infoLogin.innerHTML = '--'
             })
         })
     }
@@ -206,11 +202,11 @@ class Login {
             loginBtn.disabled = true;
             mailInput.disabled = true;
             passwordInput.disabled = true;
-            infoLogin.innerHTML = "Connexion en cours...";
+            infoLogin.innerHTML = "Conexión en curso";
 
 
             if (mailInput.value == "") {
-                infoLogin.innerHTML = "Entrez votre adresse email / Nom d'utilisateur"
+                infoLogin.innerHTML = "--"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
@@ -219,7 +215,7 @@ class Login {
             }
 
             if (mailInput.value.length < 3) {
-                infoLogin.innerHTML = "Votre nom d'utilisateur doit avoir au moins 3 caractères"
+                infoLogin.innerHTML = "Tu nickname es muy corto (Usa más de 3 caracteres)"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
@@ -245,7 +241,7 @@ class Login {
 
                 addAccount(account)
                 accountSelect(account.uuid)
-                changePanel("home");
+                changePanel("deli");
 
                 cancelMojangBtn.disabled = false;
                 cancelMojangBtn.click();
@@ -261,7 +257,7 @@ class Login {
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
-                infoLogin.innerHTML = 'Adresse E-mail ou mot de passe invalide'
+                infoLogin.innerHTML = '--'
             })
         })
     }

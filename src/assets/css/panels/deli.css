@@ -1,0 +1,26 @@
+.modeselector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.mode {
+    margin: 20px;
+}
+
+#ec {
+    display: inline-grid;
+}
+
+
+/* Img properties*/
+#EC-img {
+    width: 100px;
+    height: 100px;
+}
+
+#rev-img {
+    width: 130px;
+    height: 180px;
+}
