@@ -45,7 +45,7 @@ class Splash {
             else this.checkUpdate();
         }).catch(e => {
             console.error(e);
-            return this.shutdown("Parece que estas debajo de una cueva,no tienes internet");
+            return this.shutdown("Parece que estas debajo de una cueva, no tienes internet");
         })
     }
 
@@ -75,10 +75,10 @@ class Splash {
     }
 
     shutdown(text) {
-        this.setStatus(`${text}<br>Detener en 5 segundos`);
+        this.setStatus(`${text}<br>Cerrando en 5 segundos`);
         let i = 4;
         setInterval(() => {
-            this.setStatus(`${text}<br>Parar en ${i--}s`);
+            this.setStatus(`${text}<br>Cerrando en ${i--}s`);
             if (i < 0) ipcRenderer.send('update-window-close');
         }, 1000);
     }
