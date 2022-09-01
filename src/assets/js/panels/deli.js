@@ -22,5 +22,6 @@ class Deli {
     
 new logger('Eternal', '#8527D9')
 console.log('hola');
+console.log('xd');
 
 export default Deli;
