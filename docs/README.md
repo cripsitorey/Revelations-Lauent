@@ -15,7 +15,7 @@
 **Clona el repositorio e instala las dependencias**
 
 ```console
-> git clone https://github.com/cripsitorey/RevelationsLauent.git
+> git clone https://github.com/cripsitorey/Revelations-Lauent.git
 > cd Revelations-Lauent
 > npm install
 ```
