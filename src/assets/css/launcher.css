@@ -8,6 +8,15 @@
     outline: none;
 }
 
+.deli-main {
+    width: 100%;
+    height: 100%;
+    size: 100%;
+    background-image: url("../images/background/next.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;

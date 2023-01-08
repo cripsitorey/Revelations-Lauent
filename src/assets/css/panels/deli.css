@@ -13,6 +13,16 @@
     display: inline-grid;
 }
 
+#EC-btn {
+    width: 200px;
+    height: 200px;
+    margin-left: 279px;
+    margin-right: 26.5;
+    margin-top: 16.75;
+    background-color: transparent;
+    color: transparent;
+    border: 0;
+}
 
 /* Img properties*/
 #EC-img {
