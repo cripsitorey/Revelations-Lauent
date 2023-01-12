@@ -1,7 +1,7 @@
 {
     "name": "revelations_lauent",
     "preductname": "Revelations Lauent",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "Launcher oficial para EternalCraft",
     "main": "src/app.js",
     "author": "SKrip",

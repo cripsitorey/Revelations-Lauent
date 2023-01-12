@@ -17,6 +17,10 @@
     background-size: 100%;
 }
 
+#maximize {
+    display: none;
+}
+
 body {
     margin: 0;
     padding: 0;
