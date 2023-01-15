@@ -8,10 +8,11 @@ const { ipcRenderer } = require('electron');
 
 import { config, logger, changePanel, database, addAccount, accountSelect } from './utils.js';
 import Login from './panels/login.js';
-import Home from './panels/home.js';
+// import Home from './panels/home.js';
 import Settings from './panels/settings.js';
 import skin from './panels/panelSkin.js';
 import Deli from './panels/deli.js'
+import Lowkey from './panels/lowkey.js'
 
 class Launcher {
     async init() {
@@ -21,7 +22,7 @@ class Launcher {
         this.config = await config.GetConfig().then(res => res);
         this.news = await config.GetNews().then(res => res);
         this.database = await new database().init();
-        this.createPanels(Login, Home, skin, Settings, Deli);
+        this.createPanels(Login, skin, Settings, Deli, Lowkey);
         this.getaccounts();
     }
 

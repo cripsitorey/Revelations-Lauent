@@ -22,22 +22,43 @@
     width: 190px;
     height: 215px;
     margin-left: -190px;
-    margin-top: 141.75px;
+    margin-top: 138.75px;
     background-color: transparent;
     color: transparent;
     border-color: transparent;
 }
 
+#CB-img {
+    width: 190;
+    height: 215;
+    margin-left: 607px;
+    margin-top: 133px;
+}
+
+#CB-btn {
+    position: fixed;
+    width: 190px;
+    height: 215px;
+    margin-left: -183px;
+    margin-top: 129.75px;
+    background-color: transparent;
+    color: transparent;
+    border-color: transparent;
+}
+
+#CB-btn:hover {
+    cursor: pointer;
+}
 
 #EC-btn:hover{
     cursor: pointer;
 }
 /* Img properties*/
 #EC-img {
-    margin-left: 139px;
+    margin-left: 140;
     width: 190px;
     height: 215px;
-    margin-top: 139px;
+    margin-bottom: -1px;
 }
 
 #rev-img {

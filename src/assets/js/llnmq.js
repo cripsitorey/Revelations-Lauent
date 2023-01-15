@@ -111,7 +111,7 @@
 //                 url: this.config.game_url === "" || this.config.game_url === undefined ? `${urlpkg}/files` : this.config.game_url,
 //                 authenticator: account,
 //                 path: `${dataDirectory}/${process.platform == 'darwin' ? this.config.dataDirectory : `.${this.config.dataDirectory}`}`,
-//                 version: "1.16.4",
+//                 version: this.lowkey.vnls,
 //                 detached: launcherSettings.launcher.close === 'close-all' ? false : true,
 //                 java: this.config.java,
 //                 javapath: javaPath.path,
