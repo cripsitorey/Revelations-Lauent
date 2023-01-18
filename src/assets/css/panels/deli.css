@@ -18,11 +18,12 @@
 } */
 
 #EC-btn {
+    border-radius: 98px;
     position: fixed;
-    width: 190px;
+    width: 204px;
     height: 215px;
-    margin-left: -190px;
-    margin-top: 141.75px;
+    margin-left: 44px;
+    margin-top: 256px;
     background-color: transparent;
     color: transparent;
     border-color: transparent;
@@ -33,14 +34,3 @@
     cursor: pointer;
 }
 /* Img properties*/
-#EC-img {
-    margin-left: 139px;
-    width: 190px;
-    height: 215px;
-    margin-top: 139px;
-}
-
-#rev-img {
-    width: 130px;
-    height: 180px;
-}
