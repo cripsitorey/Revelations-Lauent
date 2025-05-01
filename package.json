@@ -1,36 +1,44 @@
 {
-    "name": "revelations_lauent",
-    "preductname": "Revelations Lauent",
-    "version": "2.1.2",
-    "description": "Launcher oficial para EternalCraft",
+    "name": "Selvania-Launcher",
+    "preductname": "Selvania Launcher",
+    "version": "2.0.7",
+    "description": "Launcher Mincraft pour le serveur Selvania",
     "main": "src/app.js",
-    "author": "SKrip",
-    "url": "https://eternal-craft.tk/lauent/webserver/",
-    "engines": {
-        "node": "16.x.x"
+    "author": {
+        "name": "luuxis, Inc.",
+        "email": "contact@luuxis.fr",
+        "url": "https://github.com/luuxis"
     },
+    "url": "http://launcher.luuxis.fr",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
-        "build": "node build.js",
-        "dev": "nodemon --exec npm start"
+        "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
+        "build": "node build.js --obf=true --build=platform",
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/Selvania-Launcher/master/src/assets/images/icon.png"
     },
-    "license": "CC0",
+    "license": "CCANC",
     "nodemonConfig": {
-        "ext": "js,html,css"
+        "ext": "js,html,css",
+        "ignore": "**/test"
     },
     "dependencies": {
-        "electron-updater": "^5.0.1",
-        "minecraft-java-core": "^2.1.1",
-        "node-fetch": "^2.6.7"
+        "electron-updater": "^6.1.8",
+        "minecraft-java-core": "^3.10.4",
+        "node-bdd": "^2.0.4",
+        "node-fetch": "^2.7.0",
+        "xml-js": "^1.6.11"
     },
     "devDependencies": {
         "cross-env": "^7.0.3",
-        "electron": "^19.0.7",
-        "electron-builder": "^23.0.3",
-        "nodemon": "^2.0.16"
+        "electron": "^30.0.9",
+        "electron-builder": "^24.13.3",
+        "javascript-obfuscator": "^4.1.0",
+        "jimp": "^0.22.12",
+        "nodemon": "^3.1.2",
+        "png2icons": "^2.0.1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/cripsitorey/Revelations-Lauent.git"
+        "url": "git+https://github.com/luuxis/Selvania-Launcher.git"
     }
 }
