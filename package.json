@@ -1,7 +1,7 @@
 {
     "name": "revelations-lauent",
     "preductname": "Revelations Launcher",
-    "version": "2.3.2",
+    "version": "2.3.5",
     "description": "Launcher Mincraft pour le serveur Revelations",
     "main": "src/app.js",
     "author": {
